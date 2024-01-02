@@ -1,0 +1,4 @@
+## Write a solution to find the IDs of the invalid tweets
+
+select tweet_id from tweets
+where char_length(content) > 15;
