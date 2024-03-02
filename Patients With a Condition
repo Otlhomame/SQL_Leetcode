@@ -1,0 +1,3 @@
+# Write a solution to find the patient_id, patient_name, and conditions of the patients who have Type I Diabetes.
+
+select patient_id, patient_name, conditions from patients where conditions like 'DIAB10%' or conditions like '% DIAB10%';
