@@ -1,0 +1,5 @@
+# Write a solution to delete all duplicate emails, keeping only one unique email with the smallest id.
+
+delete from Person
+where Id not in (select min_id from
+(select min(Id) as min_id from Person group by Email) as a)
